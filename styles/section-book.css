@@ -26,9 +26,165 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+}
+
+.kit-book {
+  max-width: 467px;
+  max-height: 617px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(280px);
+  margin-top: 140px;
+
+  &:hover {
+    /* on hover, move markers by updating transform; transition handles reverse */
+    .marker-yellow {
+      transform: translate(61%, -15%) rotate(10deg);
+    }
+    .marker-purple {
+      transform: translate(122%, 5%) rotate(20deg);
+    }
+    .arrow-baixo {
+      transform: translate(125%, 90%);
+    }
+    .pin {
+      transform: translate(-72%, 10%) rotate(-8deg);
+    }
+    .arrow-cima {
+      transform: translate(-240%, -10%);
+    }
+    .arrow {
+      transform: translate(-112%, -325%);
+    }
+    .broche {
+      transform: translate(-200%, -100%);
+    }
+    .marca-paginas {
+      transform: translate(100%, 680%);
+    }
+    .capa-dura {
+      transform: translate(-180%, -480%);
+    }
+  }
+}
+
+.capa-livro {
+  width: 467px;
+  height: 617px;
+  position: absolute;
+  z-index: 5;
+}
+
+.marker-yellow {
+  width: 172px;
+  height: 536px;
+  position: absolute;
+  right: -240px;
+  top: 5px;
+  z-index: 2;
+  /* start with no transformation */
+  transform: none;
+  /* smooth transition for hover in/out */
+  transition: transform 500ms;
+}
+
+.marker-purple {
+  width: 172px;
+  height: 536px;
+  position: absolute;
+  right: -240px;
+  top: 5px;
+  z-index: 2;
+  /* default transform */
+  transform: none;
+  /* reverse transition when mouse leaves */
+  transition: transform 500ms;
+}
+
+.arrow-baixo {
+  width: 145px;
+  height: 150px;
+  position: absolute;
+  z-index: 1;
+  top: 400px;
+  left: 540px;
+  transform: none;
+  /* reverse transition when mouse leaves */
+  transition: transform 500ms;
+}
+
+.arrow-cima {
+  width: 104px;
+  height: 127px;
+  position: absolute;
+  z-index: 1;
+  top: 350px;
+  left: 300px;
+  transform: none;
+  /* reverse transition when mouse leaves */
+  transition: transform 500ms;
+}
+
+.arrow {
+  width: 174px;
+  height: 30px;
+  position: absolute;
+  z-index: 1;
+  top: 80px;
+  right: 0;
+  transform: none;
+  /* reverse transition when mouse leaves */
+  transition: transform 500ms;
+}
+
+.pin {
+  width: 222px;
+  height: 254px;
+  position: absolute;
+  top: 395px;
+  right: -10px;
+  z-index: 4;
+  transform: none;
+  /* reverse transition when mouse leaves */
+  transition: transform 500ms;
+}
+
+.marca-paginas {
+  position: absolute;
+  top: 550px;
+  right: -180px;
+  z-index: 2;
+
+  transition: transform 500ms;
 
 }
 
+.broche {
+  position: absolute;
+  bottom: -340px;
+  right: 60px;
+  z-index: 2;
 
+  transition: transform 500ms;
 
+}
 
+.capa-dura {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+
+  z-index: 2;
+
+  transition: transform 500ms;
+
+}
+
+.content {
+  & p {
+    font: var(--body-md);
+    color: var(--text-title);
+  }
+}
