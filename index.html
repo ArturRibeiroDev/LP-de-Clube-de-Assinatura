@@ -15,9 +15,10 @@
 <body>
   <div class="hero">
       <div class="hero-first">
-        <nav>
-          <img src="assets/logo-horizontal.svg" alt="">
-          <a href="#">Assinar</a>
+        <nav class="cabeça">
+          <img src="assets/logo-horizontal.svg" alt="" class="logo desktop-only">
+          <img src="assets/logo-symbol.svg" alt="" class="logo phone-only">
+          <a href="#" class="botão assinar">Assinar</a>
         </nav>
 
       <div class="title">
@@ -59,7 +60,7 @@
     </header>
 
     <div class="kit-book">
-      <div class="content">
+      <div class="content desktop-only">
         <img src="assets/book/book.png" alt="" class="capa-livro">
         <img src="assets/book/bookmark-purple.png" alt="" class="marker-purple">
         <img src="assets/book/bookmark-yellow.png" alt="" class="marker-yellow">
@@ -70,6 +71,9 @@
         <p class="capa-dura">Livro de capa dura</p>
         <p class="broche">Broche Exclusivo</p>
         <p class="marca-paginas">Marca Páginas temático</p>
+      </div>
+      <div class="content-phone phone-only">
+        <img src="assets/book/Component 2.png" alt="">
       </div>
     </div>
   </section>
@@ -91,8 +95,8 @@
         <li><span class="imagem-mensal-anual"></span>Acesso à comunidade literária</li>
       </ul>
       <a href="#" class="button-mensal-anual">Assinar Mensal</a>
-      <img src="assets/star-grande.svg" alt="" class="star-grande-cima">
-      <img src="assets/start-pequena.svg" alt="" class="star-pequena-cima">
+      <img src="assets/star-grande.svg" alt="" class="star-grande-cima desktop-only">
+      <img src="assets/start-pequena.svg" alt="" class="star-pequena-cima desktop-only">
     </div>
     <div class="card-semestral">
       <h3>Semestral</h3> 
@@ -106,7 +110,7 @@
         <li><span></span>Membro premium do clube</li>
       </ul>
       <a href="#" class="button-semestral">Assinar Semestral</a>
-      <img src="assets/coelho.svg" alt="" class="coelho">
+      <img src="assets/coelho.svg" alt="" class="coelho desktop-only">
     </div>
     <div class="card-anual">
       <h3>Anual</h3>
@@ -120,8 +124,8 @@
         <li><span class="imagem-mensal-anual"></span>Planner atual de leituras</li>
       </ul>
       <a href="#" class="button-mensal-anual">Assinar Anual</a>
-      <img src="assets/star-grande.svg" alt="" class="star-grande-baixo">
-      <img src="assets/start-pequena.svg" alt="" class="star-pequena-baixo">
+      <img src="assets/star-grande.svg" alt="" class="star-grande-baixo desktop-only">
+      <img src="assets/start-pequena.svg" alt="" class="star-pequena-baixo desktop-only">
     </div>
     </div>
   </section>
@@ -130,6 +134,7 @@
     
     <div class="header">
       <img src="assets/logo-horizontal.svg" alt="">
+      <div class="divider"></div>
       <div class="social-links">
         <ul>
           <li><span class="instagram"></span></li>
@@ -142,7 +147,8 @@
       </div>
     </div>
 
-    <div class="content-footer">
+    <div class="content-and-help">
+      <div class="content-footer">
       <h3>
         Conteúdos
       </h3>
@@ -162,6 +168,7 @@
         <li>Regulamentos</li>
         <li>Suporte</li>
       </ul>
+    </div>
     </div>
 
   </footer>

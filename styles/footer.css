@@ -121,3 +121,52 @@ footer {
 .e-mail {
   background-image: url(../assets/mail.svg);
 }
+
+@media (max-width: 768px) {
+  footer {
+  background-image: url(../assets/Vector.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 98px 32px 38px 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  height: auto;
+  }
+
+  .header {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+      width: 156px;
+      height: 40px;
+    }
+  }
+
+  .divider {
+    width: 225px;
+    margin-block: 12px;
+    border: 1px solid var(--shape-stroke);
+  }
+
+  .social-links {
+    margin-top: -12px;
+  }
+
+  .content-and-help {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin-top: 40px;
+    margin-left: 170px;
+  }
+}
