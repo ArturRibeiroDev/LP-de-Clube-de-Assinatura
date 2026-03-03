@@ -4,7 +4,7 @@
   justify-content: center;
 
   position: relative;
-  transform: translateY(200px);
+  margin-top: 200px;
 
 
   &:hover {
@@ -25,9 +25,12 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 1000px;
 
   position: relative;
   transform: translateY(800px);
+  /* give extra space below the pricing section so footer doesn’t sit on top */
+  margin-bottom: 1000px;
 }
 
 .pricing header {
@@ -278,6 +281,27 @@
   font: var(--button);
   color: var(--text-title);
   border-radius: .5rem;
+  position: relative;
+      overflow: hidden;
+      z-index: 0;
+
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: var(--blue-mid);
+        transform: scaleX(0);
+        transform-origin: center;
+        border-radius: .5rem;
+        transition: transform 350ms ease;
+        z-index: -1;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+      }
+
+  
 }
 
 .button-semestral {
@@ -288,7 +312,27 @@
   font: var(--button);
   color: var(--text-title);
   border-radius: .5rem;
+      position: relative;
+      overflow: hidden;
+      z-index: 0;
+
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: var(--pink-base);
+        transform: scaleX(0);
+        transform-origin: center;
+        border-radius: .5rem;
+        transition: transform 500ms ease;
+        z-index: -1;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+      }
 }
+
 
 .coelho {
   position: absolute;

@@ -1,0 +1,123 @@
+footer {
+  background-image: url(../assets/book-trace-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 415px;
+
+  display: flex;
+  padding-top: 180px;
+}
+
+.header {
+  margin-left: 10rem;
+  margin-right: auto;
+}
+
+.social-links {
+  ul {
+    display: flex;
+    margin-top: .75rem;
+  }
+
+  li{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    & span {
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &:hover {
+      background-color: var(--shape-stroke);
+      border-radius: 50%;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.content-footer {
+  & h3 {
+     font: var(--title-xs);
+     color: var(--text-body);
+     margin-bottom: 1.25rem;
+  }
+
+  & li {
+    font: var(--link);
+    color: var(--blue-light);
+
+    transition: color 300ms ease;
+
+    &:hover {
+      color: var(--text-body);
+    }
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+  }
+
+  margin-right: 56px;
+}
+
+.help {
+  & h3 {
+    font: var(--title-xs);
+    color: var(--text-body);
+     margin-bottom: 1.25rem;
+  }
+
+  & li {
+    font: var(--link);
+    color: var(--blue-light);
+
+    transition: color 300ms ease;
+
+
+    &:hover {
+      color: var(--text-body);
+    }
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+  }
+
+  margin-right: 160px;
+}
+
+.instagram {
+  background-image: url(../assets/instagram.svg);
+}
+
+.twitter {
+  background-image: url(../assets/twitter.svg);
+}
+
+.facebook {
+  background-image: url(../assets/facebook.svg);
+}
+
+.discord {
+  background-image: url(../assets/discord.svg);
+}
+
+.whatsapp {
+  background-image: url(../assets/whatsapp.svg);
+}
+
+.e-mail {
+  background-image: url(../assets/mail.svg);
+}
