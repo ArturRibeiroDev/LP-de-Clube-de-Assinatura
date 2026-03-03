@@ -56,3 +56,7 @@ h1 {
   font: var(--title-lg);
   color: var(--text-title);
 }
+
+li {
+  list-style: none;
+}
