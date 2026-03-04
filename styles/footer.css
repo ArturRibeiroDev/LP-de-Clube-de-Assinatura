@@ -98,6 +98,13 @@ footer {
   margin-right: 160px;
 }
 
+.content-and-help {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin-top: -120px;
+}
+
 .instagram {
   background-image: url(../assets/instagram.svg);
 }
